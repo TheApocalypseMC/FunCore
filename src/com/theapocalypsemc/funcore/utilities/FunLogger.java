@@ -29,6 +29,7 @@ import java.util.Random;
 import java.util.logging.Level;
 
 import static java.util.logging.Level.*;
+import static net.md_5.bungee.api.ChatColor.*;
 
 /**
  * A custom logger with a few extra features.
@@ -42,6 +43,8 @@ public class FunLogger {
     ConsoleCommandSender consoleSender; // Allows colors in console.
     String coloredPrefix; // A fun, colorful prefix.
     boolean debugMode = false; // If true, debug (Level.FINE) messages will print.
+    // A list of random chat colors to choose from (randomly chosen for the prefix)
+    private ChatColor[] randomChatColors = {AQUA, GOLD, DARK_AQUA, RED, GREEN};
 
     // == Constructor
 
@@ -127,8 +130,8 @@ public class FunLogger {
      */
     public ChatColor getRandomColor() {
         // Choose a random color ID
-        int colorID = new Random().nextInt(ChatColor.values().length);
-        return ChatColor.values()[colorID];
+        int colorID = new Random().nextInt(randomChatColors.length);
+        return randomChatColors[colorID];
     }
 
     public boolean isDebugMode() {

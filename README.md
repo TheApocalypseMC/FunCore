@@ -16,7 +16,7 @@ IP: play.theapocalypsemc.com.
 
 ## License
 
-[Read the full license text here.](src/license.txt)
+[Read the full license text here.](license.txt)
 
 Copyright (C) 2015 The Apocalypse MC.
 
