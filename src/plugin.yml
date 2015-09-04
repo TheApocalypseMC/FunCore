@@ -1,0 +1,11 @@
+# =================== #
+# FunCore Plugin YAML #
+# =================== #
+name: FunCore
+version: 0.1
+description: >
+  Core libraries that can be used by plugins that depend on it.
+  SirFaizdat is the lead developer. You can find him at http://theapocalypsemc.com/
+authors: [SirFaizdat, umarku]
+main: com.theapocalypsemc.funcore.FunCore
+website: http://theapocalypsemc.com/
