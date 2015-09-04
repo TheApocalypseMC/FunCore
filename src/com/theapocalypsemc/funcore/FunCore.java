@@ -18,6 +18,8 @@
 
 package com.theapocalypsemc.funcore;
 
+import net.md_5.bungee.api.ChatColor;
+
 /**
  * Main class for FunCore. Loads some parts of the API, but more importantly,
  * sates the appetite of Bukkit's plugin loader which requires each plugin
@@ -25,17 +27,33 @@ package com.theapocalypsemc.funcore;
  *
  * @author SirFaizdat
  */
-public class FunCore {
+public class FunCore extends FunPlugin {
 
     // == Variables
 
-    // == Constructor
-
     // == Methods
+
+    @Override
+    public void enable() {
+    }
+
+    @Override
+    public void disable() {
+    }
 
     // == Private methods
 
     // == Static methods
+
+    /**
+     * Translates &-prefixed color codes to MC color codes.
+     *
+     * @param txt The String to transalte the color codes of.
+     * @return The fully colored string.
+     */
+    public static String color(String txt) {
+        return ChatColor.translateAlternateColorCodes('&', txt);
+    }
 
     // == Getters and setters
 
